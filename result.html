@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>成績查詢結果</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="page-result">
+  <main class="wrap">
+    <section class="result-card" aria-label="查詢結果">
+      <h1 class="result-title">國立成功大學<br>114學年度碩士班招生<span class="sub2">成績查詢</span></h1>
+
+      <div class="table-wrap">
+        <table class="tbl">
+          <thead>
+            <tr>
+              <th colspan="4" class="tbl-head" id="deptTitle">電機與通信工程研究所甲組</th>
+            </tr>
+            <tr class="tbl-subhead">
+              <th>准考證號碼</th>
+              <th>姓名</th>
+              <th>報考身分類別</th>
+              <th>成績複查申請</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td id="outExamNo">5211093</td>
+              <td id="outName">許詠鈞</td>
+              <td id="outCat">一般生</td>
+              <td><a class="link" id="reviewLink" href="review.pdf" download>複查申請下載</a></td>
+            </tr>
+            <tr>
+              <td colspan="4" class="msg" id="rankMsg">（名次與成績將於你提供後更新）</td>
+            </tr>
+            <tr>
+              <td colspan="4" class="summary">
+                <div class="summary-row">
+                  <span>平均(加權)總成績：</span>
+                  <strong id="avgScore">--</strong>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td colspan="4" class="summary">
+                <div class="summary-row">
+                  <span>正取生最低錄取分數：</span><strong id="minAdmit">--</strong>
+                  <span class="sep">；</span>
+                  <span>備取生最低錄取分數：</span><strong id="minWait">--</strong>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+
+        <table class="tbl tbl2">
+          <thead>
+            <tr class="tbl-subhead">
+              <th>考試科目名稱</th>
+              <th>分數</th>
+              <th>百分比</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>工程數學</td>
+              <td id="s_math">--</td>
+              <td id="w_math">--</td>
+              <td id="p_math">--</td>
+            </tr>
+            <tr>
+              <td>電子學</td>
+              <td id="s_elec">--</td>
+              <td id="w_elec">--</td>
+              <td id="p_elec">--</td>
+            </tr>
+            <tr>
+              <td>電磁學</td>
+              <td id="s_em">--</td>
+              <td id="w_em">--</td>
+              <td id="p_em">--</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="result-actions">
+        <a class="btn btn-primary" href="index.html">返回查詢</a>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

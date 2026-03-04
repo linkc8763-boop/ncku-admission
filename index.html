@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>成績查詢</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="page-login">
+  <main class="wrap">
+    <section class="login-card" aria-label="成績查詢登入">
+      <h1 class="title">國立成功大學115學年度<br><span class="subtitle">碩士班考試招生</span>成績查詢</h1>
+
+      <div class="divider"></div>
+
+      <form id="loginForm" class="form" autocomplete="off" novalidate>
+        <div class="row">
+          <label for="examNo">准考證號碼：</label>
+          <input id="examNo" name="examNo" inputmode="numeric" />
+        </div>
+
+        <div class="row">
+          <label for="idNo">身分證字號：</label>
+          <input id="idNo" name="idNo" autocapitalize="characters" />
+        </div>
+
+        <div class="row captcha-row">
+          <label for="captchaInput">請輸入驗證碼：</label>
+          <input id="captchaInput" name="captchaInput" />
+          <div class="captcha-box" aria-label="驗證碼">
+            <span id="captchaText" class="captcha-text">C4D8</span>
+          </div>
+        </div>
+
+        <div class="hint">請輸入「准考證號碼」和「身分證字號」</div>
+
+        <div class="actions">
+          <button type="submit" class="btn btn-primary">開始查詢</button>
+          <button type="button" class="btn btn-secondary" id="resetBtn">重設</button>
+        </div>
+
+        <p class="error" id="error" role="alert" aria-live="polite"></p>
+      </form>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
